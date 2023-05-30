@@ -168,9 +168,21 @@ namespace SAD_Préstamos.Views.Consultations
         {
             pnlBtn.Visible = false;
 
+            // Crear una imagen del contenido del panel pnlInfo
             Bitmap bm = new Bitmap(this.pnlInfo.Width, this.pnlInfo.Height);
             this.pnlInfo.DrawToBitmap(bm, new Rectangle(0, 0, this.pnlInfo.Width, this.pnlInfo.Height));
-            e.Graphics.DrawImage(bm, 6, 0);
+
+            // Obtener las dimensiones del área de impresión disponible en la página
+            Rectangle printArea = e.MarginBounds;
+
+            // Ajustar la imagen al tamaño del área de impresión manteniendo la relación de aspecto
+            float ratio = Math.Min((float)printArea.Width / bm.Width, (float)printArea.Height / bm.Height);
+            int newWidth = (int)(bm.Width * ratio);
+            int newHeight = (int)(bm.Height * ratio);
+            Bitmap scaledBm = new Bitmap(bm, newWidth, newHeight);
+
+            // Dibujar la imagen escalada en el área de impresión
+            e.Graphics.DrawImage(scaledBm, printArea.Left, printArea.Top, printArea.Width, printArea.Height);
 
             pnlBtn.Visible = true;
         }

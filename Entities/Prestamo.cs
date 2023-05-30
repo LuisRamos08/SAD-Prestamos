@@ -26,7 +26,7 @@ namespace SAD_Préstamos.Entities
         public double IngresosMensuales {get; set; }
         public double GastosMensuales { get; set; }
 
-        //Datos Crediticios
+        //Garantía
         public double MontoPropiedades { get; set; }
         public double MontoVehiculos { get; set; }
         public double MontoTerrenos { get; set; }

@@ -33,6 +33,7 @@
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtPuntajeCrediticio = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.txtPropiedades = new System.Windows.Forms.NumericUpDown();
             this.txtTerrenos = new System.Windows.Forms.NumericUpDown();
@@ -65,7 +66,6 @@
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.correoElectronicoLabel = new System.Windows.Forms.Label();
             this.btnProcesarSolicitud = new System.Windows.Forms.Button();
-            this.txtPuntajeCrediticio = new System.Windows.Forms.TextBox();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtPropiedades)).BeginInit();
@@ -84,7 +84,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(602, 11);
+            this.label1.Location = new System.Drawing.Point(492, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(293, 27);
@@ -102,7 +102,7 @@
             this.btnLimpiar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnLimpiar.Image = ((System.Drawing.Image)(resources.GetObject("btnLimpiar.Image")));
             this.btnLimpiar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLimpiar.Location = new System.Drawing.Point(226, 640);
+            this.btnLimpiar.Location = new System.Drawing.Point(116, 638);
             this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(301, 51);
@@ -120,7 +120,7 @@
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar.ForeColor = System.Drawing.Color.Red;
-            this.btnCerrar.Location = new System.Drawing.Point(207, 19);
+            this.btnCerrar.Location = new System.Drawing.Point(48, 9);
             this.btnCerrar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(32, 34);
@@ -139,12 +139,20 @@
             this.groupBox3.Controls.Add(this.txtGastos);
             this.groupBox3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox3.Location = new System.Drawing.Point(226, 338);
+            this.groupBox3.Location = new System.Drawing.Point(116, 336);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(977, 295);
             this.groupBox3.TabIndex = 32;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Datos Crediticios";
+            // 
+            // txtPuntajeCrediticio
+            // 
+            this.txtPuntajeCrediticio.Location = new System.Drawing.Point(740, 28);
+            this.txtPuntajeCrediticio.Name = "txtPuntajeCrediticio";
+            this.txtPuntajeCrediticio.ReadOnly = true;
+            this.txtPuntajeCrediticio.Size = new System.Drawing.Size(200, 32);
+            this.txtPuntajeCrediticio.TabIndex = 24;
             // 
             // groupBox4
             // 
@@ -303,7 +311,7 @@
             this.groupBox2.Controls.Add(this.txtMontoSolicitado);
             this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox2.Location = new System.Drawing.Point(226, 253);
+            this.groupBox2.Location = new System.Drawing.Point(116, 251);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(977, 82);
             this.groupBox2.TabIndex = 31;
@@ -370,7 +378,7 @@
             this.groupBox1.Controls.Add(this.correoElectronicoLabel);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox1.Location = new System.Drawing.Point(226, 74);
+            this.groupBox1.Location = new System.Drawing.Point(116, 72);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(977, 175);
             this.groupBox1.TabIndex = 30;
@@ -507,7 +515,7 @@
             this.btnProcesarSolicitud.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnProcesarSolicitud.Image = ((System.Drawing.Image)(resources.GetObject("btnProcesarSolicitud.Image")));
             this.btnProcesarSolicitud.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProcesarSolicitud.Location = new System.Drawing.Point(903, 640);
+            this.btnProcesarSolicitud.Location = new System.Drawing.Point(793, 638);
             this.btnProcesarSolicitud.Margin = new System.Windows.Forms.Padding(4);
             this.btnProcesarSolicitud.Name = "btnProcesarSolicitud";
             this.btnProcesarSolicitud.Size = new System.Drawing.Size(301, 51);
@@ -517,20 +525,12 @@
             this.btnProcesarSolicitud.UseVisualStyleBackColor = false;
             this.btnProcesarSolicitud.Click += new System.EventHandler(this.btnProcesarSolicitud_Click);
             // 
-            // txtPuntajeCrediticio
-            // 
-            this.txtPuntajeCrediticio.Location = new System.Drawing.Point(740, 28);
-            this.txtPuntajeCrediticio.Name = "txtPuntajeCrediticio";
-            this.txtPuntajeCrediticio.ReadOnly = true;
-            this.txtPuntajeCrediticio.Size = new System.Drawing.Size(200, 32);
-            this.txtPuntajeCrediticio.TabIndex = 24;
-            // 
             // rSolicitudDePrestamos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(56)))), ((int)(((byte)(79)))));
-            this.ClientSize = new System.Drawing.Size(1400, 745);
+            this.ClientSize = new System.Drawing.Size(1168, 709);
             this.Controls.Add(this.btnProcesarSolicitud);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);

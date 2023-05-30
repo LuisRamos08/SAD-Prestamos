@@ -1,6 +1,6 @@
 ﻿namespace SAD_Préstamos
 {
-    partial class Menu
+    partial class MenuForm
     {
         /// <summary>
         /// Variable del diseñador requerida.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuForm));
             this.MenuVertical = new System.Windows.Forms.Panel();
             this.lblcorreo = new System.Windows.Forms.Label();
             this.lbluser = new System.Windows.Forms.Label();
@@ -141,6 +141,7 @@
             this.btnDecisionTree.Text = "Arbol de Decisiones    ";
             this.btnDecisionTree.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDecisionTree.UseVisualStyleBackColor = true;
+            this.btnDecisionTree.Click += new System.EventHandler(this.btnDecisionTree_Click);
             // 
             // btnSolicitud
             // 
@@ -272,7 +273,7 @@
             this.panelContenedor.Size = new System.Drawing.Size(1400, 745);
             this.panelContenedor.TabIndex = 2;
             // 
-            // Menu
+            // MenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -283,7 +284,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Menu";
+            this.Name = "MenuForm";
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.MenuVertical.ResumeLayout(false);

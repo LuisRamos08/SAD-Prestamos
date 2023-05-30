@@ -8,12 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using SAD_Préstamos.Views.Consultations;
 
 namespace SAD_Préstamos
 {
-    public partial class Menu : Form
+    public partial class MenuForm : Form
     {
-        public Menu()
+        public MenuForm()
         {
             InitializeComponent();
         }
@@ -87,6 +88,11 @@ namespace SAD_Préstamos
         private void Form1_Load(object sender, EventArgs e)
         {
             btnlogoInicio_Click(null,e);
+        }
+
+        private void btnDecisionTree_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new cArbolDeDecision());
         }
     }
 }

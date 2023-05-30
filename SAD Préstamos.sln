@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SAD Préstamos", "SAD Préstamos.csproj", "{A72A79F1-92CF-4E53-8076-362571C4F89B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A72A79F1-92CF-4E53-8076-362571C4F89B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A72A79F1-92CF-4E53-8076-362571C4F89B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A72A79F1-92CF-4E53-8076-362571C4F89B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A72A79F1-92CF-4E53-8076-362571C4F89B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50C3870D-EF83-4268-A83E-074B3DB2EF03}
+	EndGlobalSection
+EndGlobal
